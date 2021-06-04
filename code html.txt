@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Building the Prototype</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="container">
+<h1>Computer Architecture</h1>
+<img src="Arc1.jpg" alt="Check the internet">
+<p><a href="https://en.wikipedia.org/wiki/Computer_architecture">Go to wikipedia.com</a></p>
+<div id="card" class="computer-info">
+<p id="interesting-fact">Learn more about computer Architecture and  more..</p>
+<ul id="facts">
+<li>
+<span>Scientific Research Name</span>:  Computer Architecture
+<li>
+<span>Broughted By</span>:  Mahmoued Ahmed Marzouk
+<li>
+  <span>Desk number</span>:  845
+  <li>
+<span>College</span>:  Shubra Faculty of Engineering
+<li>
+<span>University</span>:  Banha University
+</ul>
+<p id="summary">
+  <span>Definition</span>:
+  What is Computer Architecture?
+Computer architecture is a specification describing how hardware and software technologies interact to create a computer platform or system. When we think of the word architecture, we think of building a house or a building. Keeping that same principle in mind, computer architecture involves building a computer and all that goes into a computer system. Computer architecture consists of three main categories.
+System design – This includes all the hardware parts, such as CPU, data processors, multiprocessors, memory controllers and direct memory access. This part is the actual computer system.
+Instruction set architecture – The includes the CPU’s functions and capabilities, the CPU’s programming language, data formats, processor register types and instructions used by computer programmers. This part is the software that makes it run, such as Windows or Photoshop or similar programs.
+Microarchitecture – This defines the data processing and storage element or data paths and how they should be implemented into the instruction set architecture. These might include DVD storage devices or similar devices.
+All these parts go together in a certain order and must be developed in a pattern so they will function correctly.
+  <img src="a1.png" alt="Check the internet"><p>
+Computer architecture is concerned with balancing the performance, efficiency, cost, and reliability of a computer system. The case of instruction set architecture can be used to illustrate the balance of these competing factors. More complex instruction sets enable programmers to write more space efficient programs, since a single instruction can encode some higher-level abstraction (such as the x86 Loop instruction).[16] However, longer and more complex instructions take longer for the processor to decode and can be more costly to implement effectively. The increased complexity from a large instruction set also creates more room for unreliability when instructions interact in unexpected ways.
+
+The implementation involves integrated circuit design, packaging, power, and cooling. Optimization of the design requires familiarity with compilers, operating systems to logic design, and packaging.
+Besides instructions, the ISA defines items in the computer that are available to a program—e.g., data types, registers, addressing modes, and memory. Instructions locate these available items with register indexes (or names) and memory addressing modes.
+
+The ISA of a computer is usually described in a small instruction manual, which describes how the instructions are encoded. Also, it may define short (vaguely) mnemonic names for the instructions. The names can be recognized by a software development tool called an assembler. An assembler is a computer program that translates a human-readable form of the ISA into a computer-readable form. Disassemblers are also widely available, usually in debuggers and software programs to isolate and correct malfunctions in binary computer programs.
+<img src="p1.jpg" height="200"alt="Check the internet"><p>
+ <p><a href="https://www.computersciencedegreehub.com/faq/what-is-computer-architecture/">Go to Computer science.com</a></p>
+ISAs vary in quality and completeness. A good ISA compromises between programmer convenience (how easy the code is to understand), size of the code (how much code is required to do a specific action), cost of the computer to interpret the instructions (more complexity means more hardware needed to decode and execute the instructions), and speed of the computer (with more complex decoding hardware comes longer decode time). Memory organization defines how instructions interact with the memory, and how memory interacts with itself.
+During design emulation, emulators can run programs written in a proposed instruction set. Modern emulators can measure size, cost, and speed to determine whether a particular ISA is meeting its goals.
+
+<p><a href="https://www.cs.utah.edu/~germain/PPS/Topics/index.html">CPU - the ?brain? of the computer</a></p>
+Computer organization
+Main article: Microarchitecture
+Computer organization helps optimize performance-based products. For example, software engineers need to know the processing power of processors. They may need to optimize software in order to gain the most performance for the lowest price. This can require quite a detailed analysis of the computer's organization. For example, in an SD card, the designers might need to arrange the card so that the most data can be processed in the fastest possible way.
+Computer organization also helps plan the selection of a processor for a particular project. Multimedia projects may need very rapid data access, while virtual machines may need fast interrupts. Sometimes certain tasks need additional components as well. For example, a computer capable of running a virtual machine needs virtual memory hardware so that the memory of different virtual computers can be kept separated. Computer organization and features also affect power consumption and processor cost.<p>
+<span>Implementation</span>
+Once an instruction set and micro-architecture have been designed, a practical machine must be developed. This design process is called the implementation. Implementation is usually not considered architectural design, but rather hardware design engineering. Implementation can be further broken down into several steps:
+Logic implementation designs the circuits required at a logic-gate level.
+Circuit implementation does transistor-level designs of basic elements (e.g., gates, multiplexers, latches) as well as of some larger blocks (ALUs, caches etc.) that may be implemented at the logic-gate level, or even at the physical level if the design calls for it.
+Physical implementation draws physical circuits. The different circuit components are placed in a chip floorplan or on a board and the wires connecting them are created.
+Design validation tests the computer as a whole to see if it works in all situations and all timings. Once the design validation process starts, the design at the logic level are tested using logic emulators. However, this is usually too slow to run a realistic test. So, after making corrections based on the first test, prototypes are constructed using Field-Programmable Gate-Arrays (FPGAs). Most hobby projects stop at this stage. The final step is to test prototype integrated circuits, which may require several redesigns.
+For CPUs, the entire implementation process is organized differently and is often referred to as CPU design.<p>
+
+<span>Design goals</span>
+The exact form of a computer system depends on the constraints and goals. Computer architectures usually trade off standards, power versus performance, cost, memory capacity, latency (latency is the amount of time that it takes for information from one node to travel to the source) and throughput. Sometimes other considerations, such as features, size, weight, reliability, and expandability are also factors.
+The most common scheme does an in-depth power analysis and figures out how to keep power consumption low while maintaining adequate performance.<p>
+
+<span>Performance</span>
+Modern computer performance is often described in instructions per cycle (IPC), which measures the efficiency of the architecture at any clock frequency; a faster IPC rate means the computer is faster. Older computers had IPC counts as low as 0.1 while modern processors easily reach near 1. Superscalar processors may reach three to five IPC by executing several instructions per clock cycle.[citation needed]
+Counting machine-language instructions would be misleading because they can do varying amounts of work in different ISAs. The "instruction" in the standard measurements is not a count of the ISA's machine-language instructions, but a unit of measurement, usually based on the speed of the VAX computer architecture.
+Many people used to measure a computer's speed by the clock rate (usually in MHz or GHz). This refers to the cycles per second of the main clock of the CPU. However, this metric is somewhat misleading, as a machine with a higher clock rate may not necessarily have greater performance. As a result, manufacturers have moved away from clock speed as a measure of performance.
+Other factors influence speed, such as the mix of functional units, bus speeds, available memory, and the type and order of instructions in the programs.
+There are two main types of speed: latency and throughput. Latency is the time between the start of a process and its completion. Throughput is the amount of work done per unit time. Interrupt latency is the guaranteed maximum response time of the system to an electronic event (like when the disk drive finishes moving some data).
+Performance is affected by a very wide range of design choices — for example, pipelining a processor usually makes latency worse, but makes throughput better. Computers that control machinery usually need low interrupt latencies. These computers operate in a real-time environment and fail if an operation is not completed in a specified amount of time. For example, computer-controlled anti-lock brakes must begin braking within a predictable and limited time period after the brake pedal is sensed or else failure of the brake will occur.
+Benchmarking takes all these factors into account by measuring the time a computer takes to run through a series of test programs. Although benchmarking shows strengths, it shouldn't be how you choose a computer. Often the measured machines split on different measures. For example, one system might handle scientific applications quickly, while another might render video games more smoothly. Furthermore, designers may target and add special features to their products, through hardware or software, that permit a specific benchmark to execute quickly but don't offer similar advantages to general tasks.
+Power efficiency
+Main articles: Low-power electronics and Performance per watt
+Power efficiency is another important measurement in modern computers. A higher power efficiency can often be traded for lower speed or higher cost. The typical measurement when referring to power consumption in computer architecture is MIPS/W (millions of instructions per second per watt).<p>
+    <p>You should know about 3 main Basic show in the list</p>
+  <ul>
+    <li>Memory</li>
+    <li>Alu</li>
+    <li>processor</li>
+  </ul>
+  <img src="s1.jpeg" alt="Check the internet">
+  <p><a href="https://slideplayer.com/slide/7499589/">know more go to CH 7 Alu</a></p>
+<style>
+  table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+<p>this table show the status of ALU.</p>
+<table style="width:50%">
+  <caption>ALU table</caption>
+  <tr>
+    <th>A17</th>
+    <th>A16</th>
+    <th>function</th>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>Add</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>Subtract</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>0</td>
+    <td>Multiply</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>1</td>
+    <td>Divide</td>
+  </tr>
+</table>
+<br>
+Modern circuits have less power required per transistor as the number of transistors per chip grows.[18] This is because each transistor that is put in a new chip requires its own power supply and requires new pathways to be built to power it. However the number of transistors per chip is starting to increase at a slower rate. Therefore, power efficiency is starting to become as important, if not more important than fitting more and more transistors into a single chip. Recent processor designs have shown this emphasis as they put more focus on power efficiency rather than cramming as many transistors into a single chip as possible.[19] In the world of embedded computers, power efficiency has long been an important goal next to throughput and latency.
+Shifts in market demand
+Increases in clock frequency have grown more slowly over the past few years, compared to power reduction improvements. This has been driven by the end of Moore's Law and demand for longer battery life and reductions in size for mobile technology. This change in focus from higher clock rates to power consumption and miniaturization can be shown by the significant reductions in power consumption, as much as 50%, that were reported by Intel in their release of the Haswell microarchitecture; where they dropped their power consumption benchmark from 30 to 40 watts down to 10-20 watts.[20] Comparing this to the processing speed increase of 3 GHz to 4 GHz (2002 to 2006)[21] it can be seen that the focus in research and development are shifting away from clock frequency and moving towards consuming less power and taking up less space.<p>
+<img src="h1.jpg"height="250" alt="Check the internet">
+<p><a href="https://www.oreilly.com/library/view/designing-embedded-hardware/0596007558/ch01.html">to get more info press Here</a></p>
+</p>
+</div>
+</div>
+</body>
+</html>
